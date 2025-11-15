@@ -38,6 +38,68 @@
         display: block;
         margin: 0 auto 1rem;
       }
+      .site-nav {
+        margin-top: .25rem;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: .5rem 0;
+      }
+      .site-nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 1.25rem;
+        flex-wrap: wrap;
+      }
+      .site-nav li { position: relative; }
+      .site-nav a {
+        color: #000;
+        padding: .4rem .6rem;
+        border-radius: 9999px;
+      }
+      .site-nav a:hover, .site-nav a:focus {
+        background: rgba(0,0,0,.06);
+        color: #000;
+        font-weight: 400;
+        text-decoration: none;
+      }
+      /* Submenu dropdown */
+      .site-nav .submenu {
+        position: absolute;
+        top: calc(100% + .5rem);
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+        margin: 0;
+        padding: .25rem 0;
+        list-style: none;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        min-width: 180px;
+        box-shadow: 0 4px 16px rgba(0,0,0,.08);
+        z-index: 1000;
+      }
+      .site-nav li:hover .submenu,
+      .site-nav li:focus-within .submenu { display: block; }
+      .site-nav .submenu a {
+        display: block;
+        padding: .45rem .75rem;
+        border-radius: 0;
+        background: transparent;
+      }
+      .site-nav .submenu li + li { border-top: 1px solid #eee; }
+      @media (prefers-color-scheme: dark) {
+        .site-nav a:hover, .site-nav a:focus { background: rgba(255,255,255,.1); }
+        .site-nav .submenu {
+          background: #1e1e1e;
+          border-color: rgba(255,255,255,.18);
+          box-shadow: 0 4px 16px rgba(0,0,0,.6);
+        }
+        .site-nav .submenu li + li { border-top-color: rgba(255,255,255,.08); }
+      }
       .card {
         border: 1px solid rgba(0,0,0,.08);
         border-radius: 12px;
@@ -58,6 +120,20 @@
     <header class="hero">
       <img src="ORCA_main_banner_300dpi.png" srcset="ORCA_main_banner_300dpi.png 1x, ORCA_main_banner_300dpi.png 2x" alt="Orca Research Group banner" class="banner">
       <h1>The Ocean-Atmospheric Responce to Coupled Air-sea dynamics Research Group</h1>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About us</a></li>
+          <li>
+            <a href="#people">Our People</a>
+            <ul class="submenu" aria-label="Our People submenu">
+              <li><a href="#researchers">Researchers</a></li>
+              <li><a href="#students">Students</a></li>
+            </ul>
+          </li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main></main>
     <footer>
