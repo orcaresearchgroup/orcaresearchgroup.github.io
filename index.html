@@ -16,6 +16,10 @@
       header {
         padding: 0 1rem 1.5rem;
         text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: #fff;
       }
       main {
         max-width: 900px;
@@ -38,11 +42,29 @@
         display: block;
         margin: 0 auto 1rem;
       }
+      /* Brand bar with left-aligned mini banner on colored background */
+      .brand-bar {
+        background: #216778;
+        width: 100%;
+        text-align: left; /* override header centering */
+      }
+      .header-inner {
+        max-width: 1400px;
+        min-width: 320px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+      .brand-bar img {
+        display: block;
+        height: 80px;
+        max-width: 100%;
+      }
       .site-nav {
         margin-top: .25rem;
         border-top: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
-        padding: .5rem 0;
+        padding: .25rem 0;
+        width: 100%;
       }
       .site-nav ul {
         margin: 0;
@@ -56,7 +78,8 @@
       .site-nav li { position: relative; }
       .site-nav a {
         color: #000;
-        padding: .4rem .6rem;
+        padding: .25rem .5rem;
+        font-size: 1.05rem;
         border-radius: 9999px;
       }
       .site-nav a:hover, .site-nav a:focus {
@@ -99,6 +122,15 @@
           box-shadow: 0 4px 16px rgba(0,0,0,.6);
         }
         .site-nav .submenu li + li { border-top-color: rgba(255,255,255,.08); }
+        header { background: #121212; }
+      }
+      /* On small screens, scale the banner proportionally without fixing height */
+      @media (max-width: 600px) {
+        .brand-bar img {
+          height: auto;
+          width: auto;
+          max-width: 100%;
+        }
       }
       .card {
         border: 1px solid rgba(0,0,0,.08);
@@ -118,22 +150,26 @@
   </head>
   <body>
     <header class="hero">
-      <img src="ORCA_main_banner_300dpi.png" srcset="ORCA_main_banner_300dpi.png 1x, ORCA_main_banner_300dpi.png 2x" alt="Orca Research Group banner" class="banner">
-      <h1>The Ocean-Atmospheric Responce to Coupled Air-sea dynamics Research Group</h1>
-      <nav class="site-nav" aria-label="Primary">
-        <ul>
-          <li><a href="#about">About us</a></li>
-          <li>
-            <a href="#people">Our People</a>
-            <ul class="submenu" aria-label="Our People submenu">
-              <li><a href="#researchers">Researchers</a></li>
-              <li><a href="#students">Students</a></li>
-            </ul>
-          </li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="brand-bar">
+        <img src="ORCA_main_mini_banner_300dpi.png" alt="Orca Research Group mini banner">
+      </div>
+      <div class="header-inner">
+        <h1>The Ocean-Atmospheric Responce to Coupled Air-sea dynamics Research Group</h1>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#about">About us</a></li>
+            <li>
+              <a href="#people">Our People</a>
+              <ul class="submenu" aria-label="Our People submenu">
+                <li><a href="#researchers">Researchers</a></li>
+                <li><a href="#students">Students</a></li>
+              </ul>
+            </li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main></main>
     <footer>
