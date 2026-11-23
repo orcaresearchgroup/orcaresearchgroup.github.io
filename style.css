@@ -210,6 +210,12 @@ a:hover, a:focus { text-decoration: underline; }
   overflow: hidden;
 }
 .meeting-list li:not([hidden]) + li:not([hidden]) { margin-top: 1rem; }
+#publication-list.is-rotating { display: grid; }
+#publication-list.is-rotating > li { grid-area: 1 / 1; }
+#publication-list.is-rotating > li[hidden] {
+  display: grid;
+  visibility: hidden;
+}
 @media (max-width: 600px) {
   .meeting-list li { grid-template-columns: 1fr; }
   .meeting-controls {

@@ -216,6 +216,7 @@
           restartRotation();
         });
         showSlide(0);
+        list.classList.add('is-rotating');
         stage.querySelector('.meeting-controls').hidden = false;
         list.setAttribute('aria-live', reducedMotion.matches ? 'polite' : 'off');
         restartRotation();
