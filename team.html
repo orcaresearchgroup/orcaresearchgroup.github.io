@@ -10,23 +10,17 @@
   <body class="subpage">
     <header class="hero">
       <div class="brand-bar">
-        <img src="ORCA_main_mini_banner_300dpi.png" alt="Orca Research Group mini banner">
+        <img src="ORCA_main_mini_banner_300dpi.png" alt="ORCA Research Group" width="954" height="105">
       </div>
       <div class="header-inner">
-        <h1>Ocean–Atmosphere Responses to Coupled Air–Sea Dynamics Research Group</h1>
+        <h1>Ocean–Atmosphere Responses to Coupled Air–Sea Dynamics</h1>
         <nav class="site-nav" aria-label="Primary">
           <ul>
             <li><a href="index.html#home">Home</a></li>
             <li><a href="index.html#about">About us</a></li>
-            <li>
-              <a href="team.html" aria-current="page">Our Team</a>
-              <ul class="submenu" aria-label="Our Team submenu">
-                <li><a href="team.html#researchers">Researchers</a></li>
-                <li><a href="team.html#students">Students</a></li>
-              </ul>
-            </li>
+            <li><a href="team.html" aria-current="page">Our Team</a></li>
             <li><a href="research.html">Research</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -35,13 +29,89 @@
       <h2>Our Team</h2>
       <section class="card" id="researchers">
         <h3>Researchers</h3>
+        <ul class="researcher-grid" role="list">
+          <li class="researcher-profile">
+            <img src="team_photos/marco-larranaga.jpg" alt="Portrait of Marco Larrañaga" width="500" height="700">
+            <a href="people/marco-larranaga.html">Marco Larrañaga</a>
+          </li>
+          <li class="researcher-profile">
+            <img src="team_photos/sthitapragya-ray.jpg" alt="Portrait of Sthitapragya Ray" width="600" height="634">
+            <a href="people/sthitapragya-ray.html">Sthitapragya Ray</a>
+          </li>
+          <li class="researcher-profile">
+            <img src="team_photos/mark-bourassa.jpg" alt="Portrait of Mark Bourassa" width="260" height="325">
+            <a href="people/mark-bourassa.html">Mark Bourassa</a>
+          </li>
+          <li class="researcher-profile">
+            <img src="team_photos/daniel-pelaez-zapata.jpg" alt="Portrait of Daniel Santiago Peláez-Zapata" width="800" height="560">
+            <a href="people/daniel-pelaez-zapata.html">Daniel Santiago Peláez-Zapata</a>
+          </li>
+          <li class="researcher-profile">
+            <div class="profile-placeholder" aria-hidden="true"></div>
+            <a href="people/lucia-robles-diaz.html">Lucía Robles Díaz</a>
+          </li>
+          <li class="researcher-profile">
+            <div class="profile-placeholder" aria-hidden="true"></div>
+            <a href="people/sorayda-tanahara.html">Sorayda Tanahara</a>
+          </li>
+        </ul>
       </section>
       <section class="card" id="students">
         <h3>Students</h3>
+        <ul class="researcher-grid" role="list">
+          <li class="researcher-profile">
+            <div class="profile-placeholder" aria-hidden="true"></div>
+            <a href="people/oscar-tiznado.html">Oscar Tiznado</a>
+          </li>
+          <li class="researcher-profile">
+            <div class="profile-placeholder" aria-hidden="true"></div>
+            <a href="people/ana-nicole-magana-sanchez.html">Ana Nicole Magaña Sanchez</a>
+          </li>
+        </ul>
       </section>
     </main>
-    <footer>
-      <small>&copy; 2024 Orca Research Group</small>
+    <footer class="site-footer" id="contact">
+      <div class="footer-columns">
+        <section class="footer-links" aria-labelledby="footer-contact">
+          <h2 id="footer-contact">Contact Us</h2>
+          <a href="mailto:orcaresearchgroup@gmail.com">orcaresearchgroup@gmail.com</a>
+          <details>
+            <summary>Accessibility</summary>
+            <p>If you have trouble accessing any part of this site, email us at <a href="mailto:orcaresearchgroup@gmail.com">orcaresearchgroup@gmail.com</a> and tell us which page or feature you were trying to use.</p>
+          </details>
+          <details>
+            <summary>Disclaimer</summary>
+            <p>Meeting dates and deadlines can change. Check the organizer’s website for current information.</p>
+          </details>
+          <small>&copy; 2024 ORCA Research Group</small>
+        </section>
+        <nav class="footer-links" aria-labelledby="footer-explore">
+          <h2 id="footer-explore">Explore ORCA</h2>
+          <a href="index.html#about">About us</a>
+          <a href="team.html">Our Team</a>
+          <a href="research.html">Research</a>
+        </nav>
+        <section class="footer-follow" aria-labelledby="follow-orca">
+          <h2 id="follow-orca">Follow ORCA</h2>
+          <form action="https://formsubmit.co/orcaresearchgroup@gmail.com" method="post" target="_blank" rel="noopener">
+            <input type="hidden" name="_subject" value="New ORCA mailing-list request">
+            <label for="subscriber-email">Subscribe to the ORCA mailing list</label>
+            <div class="footer-signup">
+              <input id="subscriber-email" name="email" type="email" autocomplete="email" placeholder="Email address" aria-describedby="signup-note" required>
+              <button type="submit">Subscribe</button>
+            </div>
+            <p id="signup-note">FormSubmit sends your email address to ORCA so we can add you to the mailing list. The confirmation opens in a new tab.</p>
+          </form>
+        </section>
+        <section aria-labelledby="footer-social-heading">
+          <h2 id="footer-social-heading">Social Media</h2>
+          <ul class="footer-social" aria-label="Social media">
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@16/icons/facebook.svg" alt="Facebook" width="24" height="24"></li>
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@16/icons/x.svg" alt="X" width="24" height="24"></li>
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@16/icons/youtube.svg" alt="YouTube" width="24" height="24"></li>
+          </ul>
+        </section>
+      </div>
     </footer>
   </body>
   </html>
