@@ -215,7 +215,7 @@ footer {
 }
 .footer-columns {
   display: grid;
-  grid-template-columns: 1.15fr .8fr 1.25fr .7fr;
+  grid-template-columns: 1.15fr 1.25fr 1.25fr;
   gap: 1.5rem;
   max-width: 900px;
   margin: 0 auto;
@@ -247,7 +247,8 @@ footer {
   gap: .5rem;
   margin-top: .5rem;
 }
-.footer-signup input, .footer-signup button {
+.footer-signup input, .footer-signup button,
+.footer-comment input, .footer-comment textarea, .footer-comment button {
   min-height: 2.75rem;
   border: 1px solid #fff;
   border-radius: 6px;
@@ -255,13 +256,25 @@ footer {
   padding: .4rem .75rem;
 }
 .footer-signup input { width: min(100%, 17rem); }
-.footer-signup button {
+.footer-signup button, .footer-comment button {
   background: #fff;
   color: #164e5b;
   cursor: pointer;
   font-weight: 600;
 }
+.footer-comment {
+  display: grid;
+  gap: .5rem;
+  margin: .75rem 0 1rem;
+}
+.footer-comment input, .footer-comment textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
+.footer-comment textarea { resize: vertical; }
+.footer-comment button { justify-self: start; }
 .footer-follow p { margin: .5rem 0 0; }
+[aria-labelledby="footer-social-heading"] { margin-top: 1.5rem; }
 .footer-social {
   display: flex;
   gap: 1.25rem;
@@ -304,6 +317,7 @@ body.subpage header { position: static; }
   margin-bottom: .5rem;
 }
 .researcher-profile a {
+  display: block;
   color: #164e5b;
   font-weight: 600;
   text-decoration: underline;
@@ -327,7 +341,10 @@ body.subpage header { position: static; }
     radial-gradient(ellipse 2.35rem 1.7rem at 50% 69%, #6c8e98 98%, transparent),
     #eaf2f4;
 }
-.researcher-profile .profile-placeholder { margin-bottom: .5rem; }
+.researcher-profile .profile-placeholder {
+  display: block;
+  margin-bottom: .5rem;
+}
 .profile-publications { margin-top: 2rem; }
 .profile-paper-list {
   display: grid;

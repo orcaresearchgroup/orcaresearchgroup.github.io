@@ -47,25 +47,29 @@
     </main>
     <footer class="site-footer" id="contact">
       <div class="footer-columns">
-        <section class="footer-links" aria-labelledby="footer-contact">
-          <h2 id="footer-contact">Contact Us</h2>
-          <a href="mailto:orcaresearchgroup@gmail.com">orcaresearchgroup@gmail.com</a>
-          <details>
-            <summary>Accessibility</summary>
-            <p>If you have trouble accessing any part of this site, email us at <a href="mailto:orcaresearchgroup@gmail.com">orcaresearchgroup@gmail.com</a> and tell us which page or feature you were trying to use.</p>
-          </details>
-          <details>
-            <summary>Disclaimer</summary>
-            <p>Meeting dates and deadlines can change. Check the organizer’s website for current information.</p>
-          </details>
-          <small>&copy; 2024 ORCA Research Group</small>
-        </section>
-        <nav class="footer-links" aria-labelledby="footer-explore">
-          <h2 id="footer-explore">Explore ORCA</h2>
-          <a href="../index.html#about">About us</a>
-          <a href="../team.html">Our Team</a>
-          <a href="../research.html">Research</a>
-        </nav>
+        <div>
+          <section class="footer-links" aria-labelledby="footer-contact">
+            <h2 id="footer-contact">Contact Us</h2>
+            <a href="mailto:orcaresearchgroup@gmail.com">orcaresearchgroup@gmail.com</a>
+            <details>
+              <summary>Accessibility</summary>
+              <p>If you have trouble accessing any part of this site, email us at <a href="mailto:orcaresearchgroup@gmail.com">orcaresearchgroup@gmail.com</a> and tell us which page or feature you were trying to use.</p>
+            </details>
+            <details>
+              <summary>Disclaimer</summary>
+              <p>Meeting dates and deadlines can change. Check the organizer’s website for current information.</p>
+            </details>
+            <small>&copy; 2024 ORCA Research Group</small>
+          </section>
+          <section aria-labelledby="footer-social-heading">
+            <h2 id="footer-social-heading">Social Media</h2>
+            <ul class="footer-social" aria-label="Social media">
+              <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@16/icons/facebook.svg" alt="Facebook" width="24" height="24"></li>
+              <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@16/icons/x.svg" alt="X" width="24" height="24"></li>
+              <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@16/icons/youtube.svg" alt="YouTube" width="24" height="24"></li>
+            </ul>
+          </section>
+        </div>
         <section class="footer-follow" aria-labelledby="follow-orca">
           <h2 id="follow-orca">Follow ORCA</h2>
           <form action="https://formsubmit.co/orcaresearchgroup@gmail.com" method="post" target="_blank" rel="noopener">
@@ -78,13 +82,18 @@
             <p id="signup-note">FormSubmit sends your email address to ORCA so we can add you to the mailing list. The confirmation opens in a new tab.</p>
           </form>
         </section>
-        <section aria-labelledby="footer-social-heading">
-          <h2 id="footer-social-heading">Social Media</h2>
-          <ul class="footer-social" aria-label="Social media">
-            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@16/icons/facebook.svg" alt="Facebook" width="24" height="24"></li>
-            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@16/icons/x.svg" alt="X" width="24" height="24"></li>
-            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@16/icons/youtube.svg" alt="YouTube" width="24" height="24"></li>
-          </ul>
+        <section aria-labelledby="footer-comment-heading">
+          <h2 id="footer-comment-heading">Send a comment</h2>
+          <form class="footer-comment" action="https://formsubmit.co/orcaresearchgroup@gmail.com" method="post" target="_blank" rel="noopener">
+            <input type="hidden" name="_subject" value="New ORCA website comment">
+            <label for="comment-name">Name</label>
+            <input id="comment-name" name="name" type="text" autocomplete="name" required>
+            <label for="comment-email">Email</label>
+            <input id="comment-email" name="email" type="email" autocomplete="email" required>
+            <label for="comment-message">Comment</label>
+            <textarea id="comment-message" name="message" rows="4" required></textarea>
+            <button type="submit">Send comment</button>
+          </form>
         </section>
       </div>
     </footer>
