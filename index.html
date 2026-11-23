@@ -158,13 +158,14 @@
         </nav>
         <section class="footer-follow" aria-labelledby="follow-orca">
           <h2 id="follow-orca">Follow ORCA</h2>
-          <form id="mailing-list-form" action="mailto:orcaresearchgroup@gmail.com?subject=Subscribe%20to%20ORCA%20updates" method="post" enctype="text/plain">
+          <form action="https://formsubmit.co/orcaresearchgroup@gmail.com" method="post">
+            <input type="hidden" name="_subject" value="New ORCA mailing-list request">
             <label for="subscriber-email">Subscribe to the ORCA mailing list</label>
             <div class="footer-signup">
               <input id="subscriber-email" name="email" type="email" autocomplete="email" placeholder="Email address" aria-describedby="signup-note" required>
               <button type="submit">Subscribe</button>
             </div>
-            <p id="signup-note">This opens your email app. Send the prepared message to request updates.</p>
+            <p id="signup-note">FormSubmit sends your email address to ORCA so we can add you to the mailing list.</p>
           </form>
         </section>
         <section aria-labelledby="footer-social-heading">
@@ -178,14 +179,6 @@
       </div>
     </footer>
     <script>
-      document.getElementById('mailing-list-form').addEventListener('submit', (event) => {
-        event.preventDefault();
-        const email = document.getElementById('subscriber-email').value.trim();
-        const subject = encodeURIComponent('Subscribe to ORCA updates');
-        const body = encodeURIComponent('Please subscribe this email address to ORCA updates: ' + email);
-        window.location.href = 'mailto:orcaresearchgroup@gmail.com?subject=' + subject + '&body=' + body;
-      });
-
       const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
       document.querySelectorAll('.meeting-stage').forEach((stage) => {
