@@ -134,7 +134,10 @@ a:hover, a:focus { text-decoration: underline; }
   margin-top: 1.5rem;
 }
 .home-layout h2 { margin: 0 0 1rem; }
-.meeting-stage { position: relative; }
+.meeting-stage {
+  position: relative;
+  overflow-anchor: none;
+}
 .meeting-controls {
   position: absolute;
   inset: 0 auto 0 0;
@@ -210,9 +213,13 @@ a:hover, a:focus { text-decoration: underline; }
   overflow: hidden;
 }
 .meeting-list li:not([hidden]) + li:not([hidden]) { margin-top: 1rem; }
-#publication-list.is-rotating { display: grid; }
-#publication-list.is-rotating > li { grid-area: 1 / 1; }
-#publication-list.is-rotating > li[hidden] {
+.meeting-list.is-rotating {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+.meeting-list.is-rotating > li { grid-area: 1 / 1; }
+/* Keep inactive slides in the grid so the tallest one sets the height. */
+.meeting-list.is-rotating > li[hidden] {
   display: grid;
   visibility: hidden;
 }
