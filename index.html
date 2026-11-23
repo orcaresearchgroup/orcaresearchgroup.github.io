@@ -3,162 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Ocean-Atmospheric Responce to Coupled Air-Sea Dynamics Research Group</title>
+    <title>Ocean–Atmosphere Responses to Coupled Air–Sea Dynamics Research Group</title>
     <meta name="description" content="Official website for Orca Research Group">
-    <style>
-      :root { color-scheme: light dark; }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", Arial, "Apple Color Emoji", "Segoe UI Emoji";
-        line-height: 1.6;
-      }
-      header {
-        padding: 0 1rem 1.5rem;
-        text-align: center;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        background: #fff;
-      }
-      main {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 0 1rem 3rem;
-      }
-      a { color: #1b5fff; text-decoration: none; }
-      a:hover, a:focus { text-decoration: underline; }
-      .hero h1 {
-        margin: 0 0 .5rem;
-        font-size: clamp(1.25rem, 2.5vw, 2rem);
-      }
-      .hero p {
-        margin: 0;
-        opacity: .8;
-      }
-      .hero .banner {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto 1rem;
-      }
-      /* Brand bar with left-aligned mini banner on colored background */
-      .brand-bar {
-        background: #216778;
-        width: 100%;
-        text-align: left; /* override header centering */
-      }
-      .header-inner {
-        max-width: 1400px;
-        min-width: 320px;
-        margin: 0 auto;
-        padding: 0 1rem;
-      }
-      .brand-bar img {
-        display: block;
-        height: 80px;
-        max-width: 100%;
-      }
-      .site-nav {
-        margin-top: .25rem;
-        border-top: 1px solid #216778;
-        border-bottom: 1px solid #216778;
-        padding: .25rem 0;
-        width: 100%;
-      }
-      .site-nav ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        gap: 1.25rem;
-        flex-wrap: wrap;
-      }
-      .site-nav li { position: relative; }
-      .site-nav a {
-        color: #000;
-        padding: .25rem .5rem;
-        font-size: 1.05rem;
-        border-radius: 9999px;
-      }
-      .site-nav a:hover, .site-nav a:focus {
-        background: #216778;
-        color: #fff;
-        border-radius: 4px;
-        font-weight: 400;
-        text-decoration: none;
-      }
-      /* Submenu dropdown */
-      .site-nav .submenu {
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        display: none;
-        margin: 0;
-        padding: .25rem 0;
-        list-style: none;
-        background: #fff;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        min-width: 180px;
-        box-shadow: 0 4px 16px rgba(0,0,0,.08);
-        z-index: 1000;
-      }
-      .site-nav li:hover .submenu,
-      .site-nav li:focus-within .submenu { display: block; }
-      .site-nav .submenu a {
-        display: block;
-        padding: .45rem .75rem;
-        border-radius: 0;
-        background: transparent;
-      }
-      .site-nav .submenu a:hover,
-      .site-nav .submenu a:focus {
-        background: #216778;
-        color: #fff;
-        text-decoration: none;
-      }
-      .site-nav .submenu li + li { border-top: 1px solid #eee; }
-      @media (prefers-color-scheme: dark) {
-        .site-nav a:hover, .site-nav a:focus { background: #216778; color: #fff; }
-        .site-nav .submenu {
-          background: #1e1e1e;
-          border-color: rgba(255,255,255,.18);
-          box-shadow: 0 4px 16px rgba(0,0,0,.6);
-        }
-        .site-nav .submenu a:hover,
-        .site-nav .submenu a:focus {
-          background: #216778;
-          color: #fff;
-        }
-        .site-nav .submenu li + li { border-top-color: rgba(255,255,255,.08); }
-        header { background: #121212; }
-      }
-      /* On small screens, scale the banner proportionally without fixing height */
-      @media (max-width: 600px) {
-        .brand-bar img {
-          height: auto;
-          width: auto;
-          max-width: 100%;
-        }
-      }
-      .card {
-        border: 1px solid rgba(0,0,0,.08);
-        border-radius: 12px;
-        padding: 1.25rem;
-        margin-top: 1.5rem;
-      }
-      footer {
-        text-align: center;
-        padding: 2rem 1rem 3rem;
-        opacity: .7;
-      }
-      @media (prefers-color-scheme: dark) {
-        .card { border-color: rgba(255,255,255,.12); }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="hero">
@@ -166,29 +13,220 @@
         <img src="ORCA_main_mini_banner_300dpi.png" alt="Orca Research Group mini banner">
       </div>
       <div class="header-inner">
-        <h1>The Ocean-Atmospheric Responce to Coupled Air-sea dynamics Research Group</h1>
+        <h1>Ocean–Atmosphere Responses to Coupled Air–Sea Dynamics Research Group</h1>
         <nav class="site-nav" aria-label="Primary">
           <ul>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About us</a></li>
             <li>
-              <a href="#people">Our Team</a>
+              <a href="team.html">Our Team</a>
               <ul class="submenu" aria-label="Our Team submenu">
-                <li><a href="#researchers">Researchers</a></li>
-                <li><a href="#students">Students</a></li>
+                <li><a href="team.html#researchers">Researchers</a></li>
+                <li><a href="team.html#students">Students</a></li>
               </ul>
             </li>
-            <li><a href="#research">Research</a></li>
+            <li><a href="research.html">Research</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main></main>
-    <footer>
-      <small>&copy; <span id="year"></span> Orca Research Group</small>
+    <main>
+      <section class="home-layout" id="home" aria-labelledby="home-heading">
+        <h2 id="home-heading">News &amp; Events</h2>
+        <div class="meeting-stage">
+          <div class="meeting-controls" hidden>
+            <button type="button" class="meeting-previous" aria-label="Previous update" aria-controls="meeting-list">←</button>
+            <button type="button" class="meeting-next" aria-label="Next update" aria-controls="meeting-list">→</button>
+          </div>
+          <ul class="meeting-list" id="meeting-list">
+            <li>
+              <a class="meeting-logo" href="https://www.agu.org/annual-meeting">
+                <img src="agu26.png" alt="AGU26 Annual Meeting">
+              </a>
+              <div class="meeting-details">
+                <h3>AGU26 Annual Meeting</h3>
+                <p class="meeting-date">7–11 December 2026 · San Francisco, California</p>
+                <p>The program spans ocean and atmospheric sciences. The standard registration rate is available through 6 December.</p>
+                <a class="meeting-link" href="https://www.agu.org/annual-meeting">Visit the AGU26 meeting site</a>
+              </div>
+            </li>
+            <li>
+              <a class="meeting-logo" href="https://annual.ametsoc.org/2027/attend/social-media-toolkit/">
+                <img src="ams2027.png" alt="107th AMS Annual Meeting">
+              </a>
+              <div class="meeting-details">
+                <h3>AMS Conference on Air–Sea Interaction</h3>
+                <p class="meeting-date">10–14 January 2027 · Denver, Colorado</p>
+                <p>The conference covers waves and other processes at the air–sea interface, with sessions on coupled modeling and observations.</p>
+                <a class="meeting-link" href="https://annual.ametsoc.org/2027/program-events/conferences-and-symposia/25th-conference-on-air-sea-interaction/">Visit the AMS conference site</a>
+              </div>
+            </li>
+            <li>
+              <a class="meeting-logo" href="https://www.egu.eu/">
+                <img src="egu-general-assembly.png" alt="EGU General Assembly">
+              </a>
+              <div class="meeting-details">
+                <h3>EGU General Assembly 2027</h3>
+                <p class="meeting-date">4–9 April 2027 · Vienna, Austria, and online</p>
+                <p>Abstracts are due <a href="https://www.egu27.eu/authors/how-to-submit.html">12 January 2027 at 13:00 CET</a>.</p>
+                <a class="meeting-link" href="https://www.egu27.eu/">Visit the EGU27 assembly site</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="card" id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About Us</h2>
+        <p>At ORCA, we’re a team of researchers from several countries with a shared interest in how the ocean, atmosphere, and surface waves influence one another. We use satellite observations, in situ measurements, and coupled numerical simulations to study these interactions across a wide range of spatial and temporal scales.</p>
+        <p>Most of us are early-career researchers, and we work with the support and mentorship of senior colleagues. We bring that same approach to mentoring students in air–sea research, from undergraduates to PhD students.</p>
+      </section>
+      <section class="home-layout" id="publications" aria-labelledby="publications-heading">
+        <h2 id="publications-heading">Recent Publications</h2>
+        <div class="meeting-stage">
+          <div class="meeting-controls" hidden>
+            <button type="button" class="meeting-previous" aria-label="Previous publication" aria-controls="publication-list">←</button>
+            <button type="button" class="meeting-next" aria-label="Next publication" aria-controls="publication-list">→</button>
+          </div>
+          <ul class="meeting-list" id="publication-list">
+            <li>
+              <a class="meeting-logo" href="https://doi.org/10.5194/os-22-821-2026">
+                <img src="paper_figs/Larranaga_LCEsep_2026.png" width="1561" height="1396" alt="Figure from the study of Loop Current eddy separation">
+              </a>
+              <div class="meeting-details">
+                <h3>The role of cyclonic eddies in the detachment and separation of Loop Current eddies</h3>
+                <p class="meeting-date"><cite>Ocean Science</cite> · 2026</p>
+                <p>Marco Larrañaga, Julien Jouanno, Eric P. Chassignet, Giovanni Durante, Ilkyeong Ma, Julio Sheinbaum, and Lionel Renault</p>
+                <div class="paper-links">
+                  <a class="meeting-link" href="https://doi.org/10.5194/os-22-821-2026">Read the paper</a>
+                  <a href="https://os.copernicus.org/articles/22/821/2026/os-22-821-2026.pdf">PDF</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="meeting-logo" href="https://doi.org/10.3390/rs17020302">
+                <img src="paper_figs/Larranaga_ODYSEA_2025.png" width="1633" height="1313" alt="Figure from the study assessing the proposed ODYSEA satellite mission">
+              </a>
+              <div class="meeting-details">
+                <h3>Assessing the Future ODYSEA Satellite Mission for the Estimation of Ocean Surface Currents, Wind Stress, Energy Fluxes, and the Mechanical Coupling between the Ocean and the Atmosphere</h3>
+                <p class="meeting-date"><cite>Remote Sensing</cite> · 2025</p>
+                <p>Marco Larrañaga, Lionel Renault, Alexander Wineteer, Marcela Contreras, Brian K. Arbic, Mark A. Bourassa, and Ernesto Rodriguez</p>
+                <div class="paper-links">
+                  <a class="meeting-link" href="https://doi.org/10.3390/rs17020302">Read the paper</a>
+                  <a href="https://www.mdpi.com/2072-4292/17/2/302/pdf">PDF</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="meeting-logo" href="https://doi.org/10.1016/j.csr.2024.105171">
+                <img src="paper_figs/Durazo_TSB_2024.png" width="606" height="591" alt="Figure from the study of surface circulation in Todos Santos Bay">
+              </a>
+              <div class="meeting-details">
+                <h3>Surface circulation in Todos Santos Bay, Baja California, México</h3>
+                <p class="meeting-date"><cite>Continental Shelf Research</cite> · 2024</p>
+                <p>R. Durazo, X. Flores-Vidal, R. Castro, F. J. Ocampo-Torres, J. Saavedra, I. Rodríguez-Padilla, and M. Larrañaga</p>
+                <div class="paper-links">
+                  <a class="meeting-link" href="https://doi.org/10.1016/j.csr.2024.105171">Read the paper</a>
+                  <a href="https://www.researchgate.net/publication/377170170_Surface_circulation_in_Todos_Santos_Bay_Baja_California_Mexico">ResearchGate</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" id="contact">
+      <div class="footer-columns">
+        <section class="footer-links" aria-labelledby="footer-contact">
+          <h2 id="footer-contact">Contact Us</h2>
+          <a href="mailto:orcaresearchgroup@gmail.com">orcaresearchgroup@gmail.com</a>
+          <details>
+            <summary>Accessibility</summary>
+            <p>If you have trouble accessing any part of this site, email us at <a href="mailto:orcaresearchgroup@gmail.com">orcaresearchgroup@gmail.com</a> and tell us which page or feature you were trying to use.</p>
+          </details>
+          <details>
+            <summary>Disclaimer</summary>
+            <p>Meeting dates and deadlines can change. Check the organizer’s website for current information.</p>
+          </details>
+          <small>&copy; 2024 ORCA Research Group</small>
+        </section>
+        <nav class="footer-links" aria-labelledby="footer-explore">
+          <h2 id="footer-explore">Explore ORCA</h2>
+          <a href="#about">About us</a>
+          <a href="team.html">Our Team</a>
+          <a href="research.html">Research</a>
+        </nav>
+        <section class="footer-follow" aria-labelledby="follow-orca">
+          <h2 id="follow-orca">Follow ORCA</h2>
+          <form id="mailing-list-form" action="mailto:orcaresearchgroup@gmail.com?subject=Subscribe%20to%20ORCA%20updates" method="post" enctype="text/plain">
+            <label for="subscriber-email">Subscribe to the ORCA mailing list</label>
+            <div class="footer-signup">
+              <input id="subscriber-email" name="email" type="email" autocomplete="email" placeholder="Email address" aria-describedby="signup-note" required>
+              <button type="submit">Subscribe</button>
+            </div>
+            <p id="signup-note">This opens your email app. Send the prepared message to request updates.</p>
+          </form>
+        </section>
+        <section aria-labelledby="footer-social-heading">
+          <h2 id="footer-social-heading">Social Media</h2>
+          <ul class="footer-social" aria-label="Social media">
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@16/icons/facebook.svg" alt="Facebook" width="24" height="24"></li>
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@16/icons/x.svg" alt="X" width="24" height="24"></li>
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@16/icons/youtube.svg" alt="YouTube" width="24" height="24"></li>
+          </ul>
+        </section>
+      </div>
     </footer>
     <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
+      document.getElementById('mailing-list-form').addEventListener('submit', (event) => {
+        event.preventDefault();
+        const email = document.getElementById('subscriber-email').value.trim();
+        const subject = encodeURIComponent('Subscribe to ORCA updates');
+        const body = encodeURIComponent('Please subscribe this email address to ORCA updates: ' + email);
+        window.location.href = 'mailto:orcaresearchgroup@gmail.com?subject=' + subject + '&body=' + body;
+      });
+
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+      document.querySelectorAll('.meeting-stage').forEach((stage) => {
+        const list = stage.querySelector('.meeting-list');
+        const slides = Array.from(list.children);
+        if (slides.length < 2) return;
+
+        let currentSlide = 0;
+        let timer;
+
+        function showSlide(index) {
+          currentSlide = (index + slides.length) % slides.length;
+          slides.forEach((slide, position) => {
+            slide.hidden = position !== currentSlide;
+          });
+        }
+
+        function restartRotation() {
+          window.clearInterval(timer);
+          if (!reducedMotion.matches) {
+            timer = window.setInterval(() => {
+              if (!stage.matches(':hover, :focus-within')) {
+                showSlide(currentSlide + 1);
+              }
+            }, 4000);
+          }
+        }
+
+        stage.querySelector('.meeting-previous').addEventListener('click', () => {
+          showSlide(currentSlide - 1);
+          restartRotation();
+        });
+        stage.querySelector('.meeting-next').addEventListener('click', () => {
+          showSlide(currentSlide + 1);
+          restartRotation();
+        });
+        showSlide(0);
+        stage.querySelector('.meeting-controls').hidden = false;
+        list.setAttribute('aria-live', reducedMotion.matches ? 'polite' : 'off');
+        restartRotation();
+      });
     </script>
   </body>
   </html>
