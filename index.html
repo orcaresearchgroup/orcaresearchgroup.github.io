@@ -182,6 +182,16 @@
       </div>
     </footer>
     <script>
+      const header = document.querySelector('.hero');
+      const aboutSection = document.getElementById('about');
+
+      function updateAboutScrollOffset() {
+        aboutSection.style.setProperty('--about-scroll-offset', `${header.getBoundingClientRect().height}px`);
+      }
+
+      updateAboutScrollOffset();
+      new ResizeObserver(updateAboutScrollOffset).observe(header);
+
       const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
       document.querySelectorAll('.meeting-stage').forEach((stage) => {

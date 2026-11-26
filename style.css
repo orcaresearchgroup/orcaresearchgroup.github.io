@@ -86,7 +86,10 @@ a:hover, a:focus { text-decoration: underline; }
   padding: 1.25rem;
   margin-top: 1.5rem;
 }
-#about { border: 0; }
+#about {
+  border: 0;
+  scroll-margin-top: var(--about-scroll-offset, 12rem);
+}
 .home-layout {
   margin-top: 1.5rem;
 }
